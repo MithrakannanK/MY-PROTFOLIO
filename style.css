@@ -75,9 +75,10 @@ body {
 .profile-img {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
+    border-radius: 12px;
     border: 4px solid white;
-    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    object-fit:cover;
+   /box-shadow: 0 0 20px rgba(255,255,255,0.6);
     animation: float 3s ease-in-out infinite;
     transition: 0.4s;
 }
@@ -229,6 +230,31 @@ h2 {
     padding: 10px 15px;
     margin: 5px;
     border-radius: 20px;
+}
+/* Contact Icons */
+.contact{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-icons a {
+   display: flex;
+}
+.contact-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.contact-icons a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #38bdf8;
 }
 
 /* Footer */
